@@ -48,7 +48,7 @@ class FestivalsLab
   # The only way to obtain the UUID for an event is to extract it from the
   # `url` property returned by the `events` endpoint
   def event(uuid)
-    FestivalsLab.request access_key, secret_token, "/event/#{uuid}"
+    FestivalsLab.request access_key, secret_token, "/events/#{uuid}"
   end
 
   class << self
